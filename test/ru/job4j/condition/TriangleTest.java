@@ -6,7 +6,7 @@ import org.junit.Test;
 public class TriangleTest {
 
     @Test
-    public void whenNotExistThenFalse() {
+    public void whenExistThenTrue() {
         double ab = 3;
         double ac = 4;
         double bc = 5;
