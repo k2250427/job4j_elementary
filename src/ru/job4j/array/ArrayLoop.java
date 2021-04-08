@@ -11,7 +11,5 @@ public class ArrayLoop {
         for (int n: numbers) {
             System.out.println(n);
         }
-
     }
-
 }
