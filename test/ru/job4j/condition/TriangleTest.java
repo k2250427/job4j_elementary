@@ -13,4 +13,13 @@ public class TriangleTest {
         boolean out = Triangle.exist(ab, ac, bc);
         Assert.assertTrue(out);
     }
+
+    @Test
+    public void whenNotExistThenFalse() {
+        double ab = 3;
+        double ac = 4;
+        double bc = 8;
+        boolean out = Triangle.exist(ab, ac, bc);
+        Assert.assertFalse(out);
+    }
 }
