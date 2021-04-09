@@ -4,17 +4,13 @@ public class Defragment {
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length - 1; index++) {
             if (array[index] == null) {
-                boolean flag = false;
                 int i;
                 for (i = index + 1; i < array.length; i++) {
                     if (array[i] != null) {
-                        flag = true;
+                        array[index] = array[i];
+                        array[i] = null;
                         break;
                     }
-                }
-                if(flag) {
-                    array[index] = array[i];
-                    array[i] = null;
                 }
             }
             System.out.print(array[index] + " ");
