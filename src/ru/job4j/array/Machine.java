@@ -11,9 +11,11 @@ public class Machine {
         int ct = 0;
         while (rest > 0) {
             if (rest >= coins[ct]) {
-                rest -= coins[ct];
-                rsl[size++] = coins[ct];
-            } else {
+                int qty = rest / coins[ct]; // кратность текущей монеты
+                for (int i = 0; i < qty; i++) {
+                    rsl[size++] = coins[ct];
+                }
+                rest -= coins[ct] * qty;
                 ct++;
             }
         }
