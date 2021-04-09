@@ -10,5 +10,4 @@ public class Greeting {
         idea = idea + 2021;
         System.out.println(idea);
     }
-
 }
