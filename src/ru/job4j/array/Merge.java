@@ -9,7 +9,7 @@ public class Merge {
             if (k >= right.length || i < left.length && left[i] <= right[k]) {
                 rsl[c] = left[i];
                 i++;
-            } else if (i >= left.length || k < right.length && left[i] > right[k]) {
+            } else {
                 rsl[c] = right[k];
                 k++;
             }
